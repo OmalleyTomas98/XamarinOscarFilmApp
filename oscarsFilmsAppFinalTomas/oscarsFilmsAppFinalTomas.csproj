@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="JSON" Version="1.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="photos\" />
+    <Folder Include="JSONDATA\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="photos\about.png" />
+    <None Remove="photos\oscarsBestDirector.png" />
+    <None Remove="photos\BestActor.png" />
+    <None Remove="photos\merylBestActress.png" />
+    <None Remove="JSONDATA\DirectorData.txt" />
+    <None Remove="photos\oscarTrophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="newItemPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="photos\about.png">
+      <IncludeInPackage>true</IncludeInPackage>
+    </EmbeddedResource>
+    <EmbeddedResource Include="photos\oscarsBestDirector.png" />
+    <EmbeddedResource Include="photos\BestActor.png" />
+    <EmbeddedResource Include="photos\merylBestActress.png" />
+    <EmbeddedResource Include="JSONDATA\DirectorData.txt" />
+    <EmbeddedResource Include="photos\oscarTrophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Mono.framework\External\xbuild-frameworks\MonoAndroid\v8.1\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="directorCollection.cs" />
+    <Compile Remove="Models\bestActressesListInfo.cs" />
+    <Compile Remove="DirectorsInfo.cs" />
+  </ItemGroup>
+</Project>

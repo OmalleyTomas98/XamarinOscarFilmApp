@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="oscarsFilmsAppFinalTomas.aboutAppPage"  Title="about AppPage">
+    <ScrollView>
+    <StackLayout>
+                <Image Source="/Users/tomasomalley/Projects/oscarsFilmsAppFinalTomas/oscarsFilmsAppFinalTomas/photos/about.png" />
+                 <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="ClapperBoard 1.0 App" FontAttributes="Bold" FontSize="22" />
+                                <Span Text=" " />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="This app is written in C# and native APIs using the" />
+                                <Span Text=" " />
+                                <Span Text="Xamarin Platform" FontAttributes="Bold" />
+                                <Span Text="." />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="It shares code with its" />
+                                <Span Text=" " />
+                                <Span Text="iOS, Android, and UWP" FontAttributes="Bold" />
+                                <Span Text=" " />
+                                <Span Text="versions." />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Click underneath to find out all the Best" />
+                                <Span Text=" " />
+                                <Span Text=" Picture Winners at the Oscars" FontAttributes="Bold" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button  Text="Best Pictures" TextColor="Black"  Clicked="bestPictureButton_Clicked" BackgroundColor="Gray" Margin="10, 5, 10, 5"/>
+                 <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Click underneath to find out all the " />
+                                <Span Text=" " />
+                                <Span Text=" Best Actor Winners" FontAttributes="Bold" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                 <Button  Text="Best Actor "  TextColor="Black"  Clicked="bestActorButton_Clicked" BackgroundColor="Gray" Margin="10, 5, 10, 5"/>
+                 <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Click underneath to find out all the "/>
+                                <Span Text="" />
+                                <Span Text=" Actress Winners at the Oscars" FontAttributes="Bold" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button  Text="BestActress "  TextColor="Black" Clicked="bestActressesButton_Clicked" BackgroundColor="Gray" Margin="10, 5, 10, 5" />
+            </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+  
